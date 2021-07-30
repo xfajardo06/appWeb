@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport", initial-scale=1.0">
+    <title>APP WEB</title>
+</head>
+<body>
+    <header>
+        Prueba técnica TUSDATOS
+    </header>
+    <div class="form">
+        
+        <div class="input-group pl-2 ">
+            <span class="input-group-text" id="basic-addon1">Busqueda</span>
+            <input type="text" class="form-control" placeholder="Busqueda" id="busqueda" aria-label="busqueda" aria-describedby="basic-addon1">
+        </div>
+        
+        <div style="display: flex;">
+            <button 
+            onclick="filter()"
+            type="button" 
+            class="btn btn-primary btn-sm"
+            >Buscar</button>
+
+            <select id="valorselect" onchange="changeSelect()" class="form-select ml-2" aria-label="Default select example">
+                <option  selected>Busqueda</option>
+                <option value="true">Completados</option>
+                <option value="false">No completados</option>
+                <option value="1">User 1</option>
+                <option value="2">User 2</option>
+                <option value="3">User 3</option>
+                <option value="4">User 4</option>
+                <option value="5">User 5</option>
+                <option value="6">User 6</option>
+                <option value="7">User 7</option>
+                <option value="8">User 8</option>
+                <option value="9">User 9</option>
+                <option value="10">User 10</option>
+            </select>
+
+            <button 
+            onclick="getAll()"
+            type="button" 
+            class="btn btn-secondary btn-sm">
+            Buscar todo</button>
+
+        </div>
+    </div>
+
+    <div class="container mt-4 shadow-lg p3 mb-5 bg-body rounded">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>USER ID</td>
+                    <td>ID</td>
+                    <td>TITTLE</td>
+                    <td>COMPLETED</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="data" class= "data">
+            </tbody>
+        </table>
+
+        <div style="text-align: center; letter-spacing: 1.5px; color: rgb(192, 24, 24)" id="registro" class= "registro">
+                
+        </div>
+
+        <script src="index.js" ></script>
+        
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
