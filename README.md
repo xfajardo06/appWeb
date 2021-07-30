@@ -1,5 +1,6 @@
 # appWeb
-Aplicacion web sencilla con JavaScript, HTML y CSS
+Aplicacion web sencilla con JavaScript, HTML, CSS e implementación de bootstrap para su maquetación.
+
 Este repositorio es una aplicación web en la cual se obtienen los datos de una api de la internet
 la cual permite acciones como: 
 - Busqueda de todos los datos por medio de un botón.
